@@ -1,0 +1,186 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{A Guide to Building a Full-Stack Live Audio Chat Room App}
+\author{Alexis Ambriz, CMPE 297}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+    \frametitle{Introduction}
+    \begin{itemize}
+        \item Overview of the project
+        \item Purpose of the live audio chat room app
+        \item Technologies used: ReactJS, NodeJS, Stream API
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Project Overview}
+    Imagine a platform like Clubhouse or Twitter Spaces; Users can create and join audio chat rooms!
+    This involves real-time audio interactions and discussions.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Technologies Used}
+    Important frameworks and APIs used in the project:
+    \begin{itemize}
+        \item \textbf{ReactJS}: For building the frontend user interface
+        \item \textbf{NodeJS}: For the backend server and API
+        \item \textbf{Stream API}: For managing audio calls and user interactions
+    \end{itemize}
+\end{frame}
+
+\section{Setting Up the Project}
+
+\begin{frame}
+    \frametitle{Setting Up the Project}
+    Steps involved in setting up the project:
+    \begin{itemize}
+        \item Creating a new app on GetStream.io
+        \item Installing necessary packages: React, NodeJS, Express, etc.
+        \item Project directory structure
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{GetStream.io Setup}
+    GetStream.io is a platform that provides APIs for building in-app chat, video, and audio features.
+    To set up the project:
+    \begin{itemize}
+        \item Sign up for a free account on GetStream.io
+        \item Create a new app and obtain API keys
+        \item GetStream.io provides APIs for building in-app chat, video, and audio features
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Package Installation}
+    \begin{itemize}
+        \item Use npm or yarn to install required packages
+        \item Examples: `react`, `react-dom`, `node-fetch`, `express`
+        \item These packages provide essential functionalities for building the app
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Project Structure}
+    \begin{itemize}
+        \item Organize your project into clear folders
+        \item Example: `frontend`, `backend`, `shared`
+        \item This structure helps keep the code organized and maintainable
+    \end{itemize}
+\end{frame}
+
+\section{Backend Development}
+
+\begin{frame}
+    \frametitle{Backend Development}
+    \begin{itemize}
+        \item NodeJS server setup
+        \item ExpressJS for handling HTTP requests
+        \item Implementing routes for user authentication, room creation, and joining
+        \item Integrating Stream API for audio calls and user interactions
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{NodeJS Server Setup}
+    \begin{itemize}
+        \item Create a new NodeJS project
+        \item Initialize the project using `npm init` or `yarn init`
+        \item Set up the `server.js` file as the entry point
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ExpressJS for HTTP Requests}
+    \begin{itemize}
+        \item Integrate the ExpressJS framework
+        \item Define routes to handle different HTTP requests
+        \item Example: `/api/users`, `/api/rooms`, `/api/join-room`
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Integrating Stream API}
+    \begin{itemize}
+        \item Use the Stream API to manage audio calls, user interactions, and more
+        \item Create users, channels (rooms), and manage audio streams
+        \item Use the `node-fetch` package to make HTTP requests to the Stream API
+    \end{itemize}
+\end{frame}
+
+\section{Frontend Development}
+
+\begin{frame}
+    \frametitle{Frontend Development}
+    \begin{itemize}
+        \item Creating the React app
+        \item User Context for managing user state
+        \item Main component for authentication and navigation
+        \item Room component for displaying room information and audio controls
+        \item Integrating Stream JavaScript SDK for audio management
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Creating the React App}
+    \begin{itemize}
+        \item Use a tool like Create React App to generate a new React project
+        \item Set up the basic structure and components
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{User Context}
+    \begin{itemize}
+        \item Create a React Context to store and share user information
+        \item Pass the context to components that need access to user data
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Main Component}
+    \begin{itemize}
+        \item The main component handles user authentication and navigation
+        \item It renders different components based on the user's state
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Room Component}
+    \begin{itemize}
+        \item The Room component displays the content of a specific room
+        \item It shows room information, participant list, and audio controls
+        \item Uses the Stream JavaScript SDK to manage audio streams
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Integrating Stream JavaScript SDK}
+    \begin{itemize}
+        \item Use the Stream JavaScript SDK to connect to the Stream service
+        \item Manage audio streams, participant list, and other functionalities
+    \end{itemize}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}
+    \frametitle{Conclusion}
+    \begin{itemize}
+        \item Recap of the key steps involved
+        \item Potential applications and future enhancements
+        \item Encourage viewers to explore and build upon the project
+    \end{itemize}
+\end{frame}
+
+\end{document}
