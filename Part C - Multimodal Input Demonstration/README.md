@@ -1,4 +1,4 @@
-# Multimodal Input Demonstration
+# Multimodal Foundational Models
 
 In this section, I demonstrate the multimodal capabilities of 3 multimodal foundational large language models. These include Gemini 1.5, Claude, and Gpt-4o.
 
