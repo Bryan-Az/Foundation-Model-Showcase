@@ -6,3 +6,4 @@ I showcase the capabilities of these models' APIs by calling these models with p
 
 ## References
 
+Vijay Eranti's CMPE 297 Emerging Technology Presentation: https://docs.google.com/presentation/d/1wSZ752fixciiSeZwuNm1gwMpa6DUzlJ8ToB7Csvlemg/edit?usp=sharing
