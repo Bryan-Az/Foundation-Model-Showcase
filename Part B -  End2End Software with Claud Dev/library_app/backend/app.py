@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -10,6 +10,11 @@ books = [
     {"id": 3, "title": "1999", "content": "It was a bright cold day in April, and the clocks were striking thirteen. The world was on the brink of a new millennium, filled with uncertainty and anticipation. People wondered what the future would hold, what technological advancements would shape our lives, and how society would evolve. Little did they know that the year 1999 would be a turning point in history, marking the beginning of a new era."},
 ]
 
+# Simple user credential 'database'
+users = {
+    "admin": "password123"
+}
+
 @app.route('/api/books')
 def get_books():
     return jsonify(books)
@@ -20,6 +25,17 @@ def get_book(book_id):
     if book:
         return jsonify(book)
     return jsonify({"error": "Book not found"}), 404
+
+@app.route('/api/login', methods=['POST'])
+def login():
+    data = request.json
+    username = data.get('username')
+    password = data.get('password')
+    
+    if username in users and users[username] == password:
+        return jsonify({"success": True, "message": "Login successful"})
+    else:
+        return jsonify({"success": False, "message": "Invalid credentials"}), 401
 
 if __name__ == '__main__':
     app.run(debug=True)
