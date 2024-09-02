@@ -1,6 +1,6 @@
 # Multimodal Foundational Models
 
-Link to youtube demo: https://youtu.be/squ814oo3YI
+Link to youtube demo: https://youtu.be/squ814oo3YI?si=fTLYOokKp0fqUPIT
 
 In this section, I demonstrate the multimodal capabilities of 3 multimodal foundational large language models. These include Gemini 1.5, Claude, and Gpt-4o.
 
